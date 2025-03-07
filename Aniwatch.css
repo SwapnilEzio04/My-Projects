@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgb(34, 32, 32);
+  width: 1920px;
+  height: 1080px;
 }
 #header {
-  background-color: rgb(41, 39, 39);
+  
   color: white;
   position: fixed;
   display: flex;
@@ -14,6 +16,8 @@ body {
   right: 0;
   margin: 0;
   z-index: 100;
+  width: 100%;
+  
 }
 .header-container {
   display: flex;
@@ -21,14 +25,14 @@ body {
   padding-left: 15px;
   justify-content: space-between;
   align-items: center;
+  
+  
 }
-.left-container
-{
-    display: flex;
+.left-container {
+  display: flex;
 }
-.right-container
-{
-    display: flex;
+.right-container {
+  display: flex;
 }
 .hamburger {
   margin: 5px 5px 5px 5px;
@@ -226,22 +230,43 @@ body {
 }
 .slideshow-container {
   position: relative;
+  z-index: 5;
+  
+  width:100% ;
   max-width: 1920px;
+  height: 100%;
   max-height: 1080px;
 }
-
+.trending {
+  position: relative;
+  z-index: 4;
+}
+#trending-text
+{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
 .slide {
   display: none;
-  aspect-ratio: 16/9;
   width: 100%;
-
   height: 100%;
+  
 }
 
-img {
+.slide img {
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  
+}
+.slide::after {
+  width: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset -10px -10px 150px 150px rgb(15, 15, 22);
 }
 
 /* Navigation Buttons */
@@ -268,7 +293,301 @@ img {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.trending {
+  padding: 0 16px;
+  padding-bottom: 48px;
+}
+.trending-text {
+  font-size: 22px;
+  color: #e4db68;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.trending-anime-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) 40px;
+  flex-direction: row;
+  height: 232px;
+}
+.trending-animes {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.anime-ranking {
+  display: grid;
+  grid-template-rows: 1fr 40px;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40px;
+  height: 100%;
+  margin-bottom: -5px;
+}
+.animename {
+  writing-mode: sideways-rl;
+  transform: rotate(180deg);
+  margin-left: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.anime-profile {
+  height: 100%;
+}
+.animerank {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e4db68;
+}
+.animepfp {
+  width: 156px;
+  height: 100%;
+  object-fit: cover;
+}
+.tr-sliders {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tr-sliders button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 111px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.tr-sliders button:hover {
+  background-color: #e4db68;
+}
+.tr-sliders button:hover .sl {
+  color: black;
+}
+.gif
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.share-container
+{
+  display: flex;
+  align-items: center;
+  background:none;
+  width: fit-content;
+}
+.share-text {
+  color: #f5d58a;
+  font-size: 20px;
+  margin-right: 15px;
+  flex-direction: column;
+  
+}
+.share-text p
+{
+  margin: 0;
+  color: gray;
+  text-align: center;
+}
+.share-count
+{
+  color: gray;
+  margin: 10px;
+}
+.share-buttons
+{
+  display: flex;
+  gap: 10px;
+}
+.btn
+{
+  padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.blue
+{
+  background-color: rgb(13, 119, 240);
+  color: white;
+  width: 125px;
+}
+.black
+{
+  background-color: black;
+  color: white;
+  width: 125px;
+}
+.fb
+{
+  background-color: rgb(7, 50, 194);
+  width: 50px;
+}
+.reddit
+{
+  background-color: orangered;
+  width: 50px;
+}
+.green{
+  background-color: rgb(54, 206, 54);
+  width: 50px;
+}
+.comments-section {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  
+  background:none;
+  
+  border-radius: 10px;
+  color: #fff;
+  
+}
 
+/* 🌟 Left Side Anime Image */
+.left-image {
+  
+  position: relative;
+  left: -50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-image img {
+  width: 300px; /* Set max width */
+  height: 300px;
+  
+  
+  
+}
+
+/* 🌟 Right Side Comments Content */
+.comments-content {
+  right: -50px;
+  
+}
+
+/* 🌟 Comments Header */
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+.tab {
+  background: none;
+  border: 2px solid #ffd700;
+  padding: 6px 12px;
+  border-radius: 15px;
+  color: #ffd700;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab.active {
+  background: #ffd700;
+  color: #1d1d1d;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #ffd700;
+}
+input:checked + .slider::before {
+  transform: translateX(14px);
+}
+
+/* 🌟 Comments Cards */
+.comments-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffd700 #333;
+  padding-bottom: 10px;
+}
+.comment-card {
+  background: #282828;
+  padding: 12px;
+  border-radius: 10px;
+  width: 250px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.comment-card:hover {
+  background: #333;
+}
+.comment-card img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.comment-content h4 {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ffd700;
+}
+.comment-content .time {
+  font-size: 12px;
+  color: #bbb;
+}
+.comment-content .text {
+  font-size: 14px;
+}
+.category {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ffd700;
+}
 /* Fade Animation */
 .fade {
   animation: fadeEffect 1s;
