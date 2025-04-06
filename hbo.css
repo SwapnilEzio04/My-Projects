@@ -1,0 +1,246 @@
+.header{
+    position: sticky;
+    top: 0;
+    
+}
+/* ----------hbo logo------------- */
+.logo{
+    width: 70px;
+    height: 25px;
+    margin-left: 100px;
+    margin-right: 30px;
+}
+/* ------------nav items---------- */
+.nav-item{
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-toggler{
+    left: 0;
+}
+/* ---------------max logo----------- */
+.max{
+    width: 50px;
+    height: 100%;
+}
+/* -------------header buttons----------- */
+.button-container{
+    margin-right: 100px;
+}
+/* ---------------sign in button---------- */
+.btn-secondary{
+    height: 30px;
+    background:none;
+    color: black;
+    border: none;
+    border-radius: 0;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.btn-secondary:hover{
+    background-color: rgba(216, 211, 211, 0.849);
+    color: black;
+}
+/* ------------sign up button--------- */
+.btn-primary{
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-primary:hover{
+    background-color: grey;
+    color: white;
+}
+/* ---------button logo------- */
+.max{
+    width: 60px;
+    height: 100%;
+    padding-bottom: 3px;
+}
+/* ---------description------- */
+.description{
+    margin-top: 70px;
+    text-align: center;
+}
+/* ---------heading text-------- */
+.heading{
+    font-size: 25px;
+    color: rgb(90, 88, 88);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ---------subscription text--------- */
+.subscription{
+    font-size: 15px;
+    color: rgba(71, 71, 71, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* --------pictures section----------- */
+.pictures{
+    height: 450px;
+    background-image: linear-gradient(25deg, black, rgb(97, 96, 96), black);
+    display: flex;
+    margin-top: 50px;
+}
+/* ---------content--------- */
+.image{
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    padding-left: 100px;
+}
+/* ----------images--------- */
+.img-fluid{
+    width: 230px;
+    height: 350px;
+    border-radius: 5px;
+}
+/* --------max------- */
+.max-container{
+    padding-top: 100px;
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.max-logo{
+    width: 275px;
+    padding-left: 20px;
+}
+/* -------------info-------- */
+.info{
+    color: white;
+    font-size: 45px;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+/* ---------button for sign up--------- */
+.button{
+    padding-left: 90px;
+    margin-top: 30px;
+}
+.switch{
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    height: 50px;
+}
+/* ----------article area--------- */
+.article{
+    width: 100%;
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px 110px 50px 110px;
+}
+/* -------------links---------- */
+.link{
+    color: rgba(104, 103, 103, 0.836);;
+}
+/* ------------content-------- */
+h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgba(22, 22, 22, 0.904);
+}
+.first{
+    margin-bottom: 70px;
+    color: rgba(104, 103, 103, 0.836);
+}
+.first2{
+    margin-bottom: 20px;
+}
+h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgba(22, 22, 22, 0.904);
+}
+.second{
+    margin-bottom: 20px;
+    color: rgba(104, 103, 103, 0.836);
+}
+.second2{
+    margin-bottom: 20px;
+    color: rgba(104, 103, 103, 0.836);
+}
+.third{
+    margin-bottom: 20px;
+    color: rgba(104, 103, 103, 0.836);
+}
+.third2{
+    margin-bottom: 100px;
+}
+.fourth{
+    margin-bottom: 20px;
+    color: rgba(104, 103, 103, 0.836);
+}
+/* -------------footer---------- */
+.footer{
+    background-color: rgb(59, 59, 59);
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.f-logo{
+    padding: 30px 0 15px;  
+    align-items: center;
+}
+/* -------------footer menu----------- */
+.footer-menu{
+    margin-bottom: 15px;
+}
+.foot{
+    color: white;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.foot:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer-menu1{
+    margin-bottom: 15px;
+}
+.foot1{
+    color: white;
+    font-size: 0.8rem;
+}
+.foot1:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* ------------footer text--------- */
+.footer-text{
+    text-align: center;
+}
+.f-text{
+    color: white;
+    font-size: 0.8rem;
+}
+@media (max-width:767px) {
+    .navbar-header {
+      display:flex;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .navbar-brand {
+      order:1;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .navbar-toggle {
+      order:0;
+      margin-left:15px;
+      margin-right:0;
+    }
+  }
